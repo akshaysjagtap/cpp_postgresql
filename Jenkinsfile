@@ -1,7 +1,6 @@
 pipeline 
 {
   agent {
-    // Use agent
     dockerfile true
   }
  
