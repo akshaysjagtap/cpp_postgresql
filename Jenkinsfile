@@ -16,7 +16,8 @@ pipeline
     {
       steps {
         echo 'checking for test cases'
-        sh 'g++ create_database.cpp -lpqxx'
+	sh 'ls'
+        //sh 'g++ create_database.cpp -lpqxx'
       }
     }
   }
