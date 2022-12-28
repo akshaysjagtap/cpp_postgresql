@@ -1,4 +1,4 @@
-FROM ubuntu:18.04
+FROM debian:11
 #FROM debian
 #RUN apt-get -q update -y
 CMD ["echo", "Update Done"]
