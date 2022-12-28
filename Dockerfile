@@ -1,6 +1,5 @@
 FROM ubuntu:18.04
-#FROM debian
-#RUN apt-get -q update -y
+RUN apt -q update -y
 CMD ["echo", "Update Done"]
 RUN apt install build-essential -y
  
