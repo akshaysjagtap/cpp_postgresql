@@ -16,7 +16,7 @@ pipeline
     {
       steps {
         echo 'checking for test cases'
-        sh 'g++ create_database.cpp -lpqxx'
+        sh 'g++ cpp_postgresql.cpp -lpqxx'
 	sh 'sudo ls'
       }
     }
