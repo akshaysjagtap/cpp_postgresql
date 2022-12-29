@@ -25,7 +25,7 @@ pipeline
          steps
          {
             echo 'Static code analysis...'
-            sh "cppcheck --enable=all --xml --xml-version=2 -itest -ibuild -ikc_cpp_toolkit cpp_postgresql.cpp 2>cppcheck.xml
+            sh "cppcheck --enable=all --xml --xml-version=2 -itest -ibuild -ikc_cpp_toolkit cpp_postgresql.cpp 2>cppcheck.xml"
          }
      }    
   }
