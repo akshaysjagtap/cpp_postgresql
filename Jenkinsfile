@@ -34,7 +34,7 @@ pipeline
           --force \
           --xml \
           --xml-version=2 -itest -ibuild -ikc_cpp_toolkit \
-          . 2>cppcheck.xml'
+          . 2> cppcheck.xml'
        }
      }   
   }
