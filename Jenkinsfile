@@ -35,11 +35,6 @@ pipeline
           --xml \
           --xml-version=2 -itest -ibuild -ikc_cpp_toolkit \
           . 2>cppcheck.xml'
-          script
-          {
-           def cppcheckissues = scanForIssues tool: cppCheck(pattern: 'cppcheck.xml')
-           publishIssues issues: [cppcheckissues], failedTotalHigh: 1, failedTotalNormal:1, failedTotalLow:1
-         }
        }
      }   
   }
