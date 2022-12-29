@@ -9,3 +9,4 @@ CMD ["echo", "Installing lsb "]
 RUN apt install cppcheck -y
 RUN apt --fix-broken install
 RUN apt install libpqxx-dev -y
+RUN apt install sudo
