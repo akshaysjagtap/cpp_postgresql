@@ -17,8 +17,7 @@ pipeline
       steps {
         echo 'checking for test cases'
         sh 'g++ cpp_postgresql.cpp -lpqxx'
-	sh 'echo $USER'
-	sh 'sudo ls'
+		sh 'cppcheck cpp_postgresql.cpp'
       }
     }
       stage('Static Analysis')
