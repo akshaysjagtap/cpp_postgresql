@@ -28,7 +28,6 @@ pipeline
             sh "cppcheck --enable=all \
                  --inline-suppr \
                  --std=c++14 \
-                 --suppressions-list=cppcheck-supressions.txt \
                  --inconclusive \
                  --force \
                  --xml \
