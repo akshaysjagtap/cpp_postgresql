@@ -35,16 +35,19 @@ pipeline
       }
     }
     
-    stage('SCM') {
+		
+  }
+  
+  node {
+  stage('SCM') {
     git 'git@github.com:akshaysjagtap/cpp_postgresql.git'
   }
-    
-     stage('SonarQube analysis') {
+  stage('SonarQube analysis') {
     def scannerHome = tool 'SonarScanner 4.0';
     withSonarQubeEnv('My SonarQube Server') { // If you have configured more than one global server connection, you can specify its name
       sh "${scannerHome}/bin/sonar-scanner"
     }
   }
-  }
+}
 }
 
