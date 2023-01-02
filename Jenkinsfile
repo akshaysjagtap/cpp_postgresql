@@ -18,7 +18,7 @@ pipeline
       steps {
         echo 'checking for test cases'
         sh 'g++ cpp_postgresql.cpp -lpqxx'
-        sh 'echo ${ps -C dockerd}'
+        sh 'echo $(ps -C dockerd)'
 
       }
     }
