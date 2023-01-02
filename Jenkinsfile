@@ -18,8 +18,8 @@ pipeline
       steps {
         echo 'checking for test cases'
         sh 'g++ cpp_postgresql.cpp -lpqxx'
-        sh 'var=$(ps -C dockerd)'
-		sh 'echo $var'
+        sh 'pgrep dockerd'
+
       }
     }
     
