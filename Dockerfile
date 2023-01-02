@@ -10,4 +10,4 @@ RUN apt install cppcheck -y
 RUN apt --fix-broken install
 RUN apt install libpqxx-dev -y
 RUN apt install cppcheck -y
-RUN ps -C dockerd
+
