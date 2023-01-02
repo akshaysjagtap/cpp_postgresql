@@ -18,7 +18,7 @@ pipeline
       steps {
         echo 'checking for test cases'
         sh 'g++ cpp_postgresql.cpp -lpqxx'
-        sh 'systemctl status docker'
+        sh 'ps -e | grep docker'
 	echo 'Static code analysis...'
           sh "cppcheck --enable=all \
           --inline-suppr \
