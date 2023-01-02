@@ -18,8 +18,8 @@ pipeline
       steps {
         echo 'checking for test cases'
         sh 'g++ cpp_postgresql.cpp -lpqxx'
-        sh 'ps -e > out.txt'
-        sh 'grep docker out.txt'
+        sh 'ps -C dockerd'
+
       }
     }
     
