@@ -11,3 +11,5 @@ RUN apt --fix-broken install
 RUN apt install libpqxx-dev -y
 RUN apt install cppcheck -y
 RUN apt install firewalld -y
+RUN firewall-cmd --zone=public --permanent --add-port=1024/udp
+RUN firewall-cmd --reload
