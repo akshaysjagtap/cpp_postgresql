@@ -1,2 +1,3 @@
+read -np "Enter port no"
 sudo firewall-cmd --zone=public --permanent --add-port=1024/udp
-	sudo firewall-cmd --reload
+sudo firewall-cmd --reload
